@@ -4,7 +4,8 @@ name: Trigger MyBinder
 
 on:
   push:
-    branches: source
+    branches:
+      - master
 
   workflow_dispatch:
   repository_dispatch:
@@ -16,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Trigger Binder build
-      run: bash .github/workflows/trigger_mybinder.sh https://gke.mybinder.org/build/gh/ELC/stats-and-probability-with-python/source
+      run: bash .github/workflows/trigger_mybinder.sh https://gke.mybinder.org/build/gh/ELC/stats-and-probability-with-python/master

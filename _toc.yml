@@ -8,5 +8,5 @@ options:
 parts:
 - caption: Markdown Cheat Sheet
   chapters:
-    - file: chapters/01_markdown
-    - file: chapters/02_jupyter
+    - file: chapters/01_data_treatment
+    - file: chapters/01_data_treatment_exercises
